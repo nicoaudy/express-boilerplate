@@ -1,1 +1,9 @@
-Hello World
+<% layout('layouts/index.ejs') -%>
+
+<% script('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js') -%>
+<% stylesheet('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css') -%>
+
+<% block('header', 'Header'); -%>
+<% block('footer', 'Footer'); -%>
+
+This is loaded from page 1 and overrides in the layout.ejs.

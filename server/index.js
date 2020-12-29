@@ -3,9 +3,11 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const engine = require("ejs-locals");
 
 const app = express();
 
+app.engine("ejs", engine);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
