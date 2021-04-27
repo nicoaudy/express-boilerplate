@@ -1,20 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Express Boilerplate</title>
     <%-stylesheets%>
-  </head>
-  <body>
-    <header>
-      <%-blocks.header%>
-    </header>
-    <section>
-      <%-body -%>
-    </section>
-    <footer>
-      <%-blocks.footer%>
-		</footer>
+</head>
 
-		<%-scripts%>
-  </body>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 ">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <span class="fs-4">Brand</span>
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            </ul>
+            <div class="dropdown text-end" style="margin-left: 2rem">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <section>
+        <%-body -%>
+    </section>
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap?
+                <a href="/">Visit the homepage</a> or read our
+                <a href="/docs/5.0/getting-started/introduction/">getting started guide</a>.
+            </p>
+        </div>
+    </footer>
+
+    <%-scripts%>
+</body>
+
 </html>
